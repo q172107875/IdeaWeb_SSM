@@ -1,0 +1,119 @@
+[INFO][main][2017-06-13 18:51:24][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 18:51:24][ssl.SSLUtils] - url======http://47.92.152.150:8080/
+[INFO][main][2017-06-13 18:51:24][ssl.SSLUtils] - body====={
+"header": {
+"business_code": "ACC001", "partner_id": "M0001",
+"puser_id": "1234",
+"tenant_id": "8923",
+"version": "1.0.0",
+"partner_serial_no": "BJ123910289e01", "service_id": "2341",
+"trade_time": "20170123123842",
+"return_url": "http://www.p2p.com/qwiioa/asidoiqw", "partner_sign": "#123kald@asdkl"
+}, "body": {
+} }
+[INFO][main][2017-06-13 18:53:01][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 18:53:01][ssl.SSLUtils] - url======http://47.92.152.150:8080/
+[INFO][main][2017-06-13 18:53:01][ssl.SSLUtils] - body====={
+"header": {
+"business_code": "ACC001", "partner_id": "M0001",
+"puser_id": "1234",
+"tenant_id": "8923",
+"version": "1.0.0",
+"partner_serial_no": "BJ123910289e01", "service_id": "2341",
+"trade_time": "20170123123842",
+"return_url": "http://www.p2p.com/qwiioa/asidoiqw", "partner_sign": "#123kald@asdkl"
+}, "body": {
+} }
+[INFO][main][2017-06-13 18:54:01][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 18:54:01][ssl.SSLUtils] - url======http://47.92.152.150:8080/
+[INFO][main][2017-06-13 18:54:01][ssl.SSLUtils] - body====={"partner_id":"ACC001","borrower_id":"","investor_id":"","puser_id":"123123","project_no":"123123","tenant_id":"123123","service_id":"123123","account_balance":"123123"}
+[INFO][main][2017-06-13 18:55:11][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 18:55:11][ssl.SSLUtils] - url======http://47.92.152.150:8080/
+[INFO][main][2017-06-13 18:55:11][ssl.SSLUtils] - body====={"partner_id":"ACC001","borrower_id":"","investor_id":"","puser_id":"123123","project_no":"123123","tenant_id":"123123","service_id":"123123","account_balance":"123123"}
+[INFO][main][2017-06-13 18:55:12][ssl.SSLUtils] - 200
+[INFO][main][2017-06-13 18:55:12][ssl.SSLUtils] - content:
+
+<html>
+<head>
+    <title>SSL TEST</title>
+</head>
+<body>
+SSL TEST
+</body>
+</html>
+
+[INFO][main][2017-06-13 19:01:24][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 19:01:24][ssl.SSLUtils] - url======http://47.92.152.150:8080/
+[INFO][main][2017-06-13 19:01:24][ssl.SSLUtils] - body====={tenant_id=asda, puser_id=adas, partner_sign=asdadasadasda, result_url=asdad, partner_serial_no=asdas, partner_id=asda, trade_time=asda, tenant_ref_no=asdasdas, service_id=asdas, business_code=12132, version=adsda}
+[INFO][main][2017-06-13 19:01:24][ssl.SSLUtils] - 200
+[INFO][main][2017-06-13 19:01:24][ssl.SSLUtils] - content:
+
+<html>
+<head>
+    <title>SSL TEST</title>
+</head>
+<body>
+SSL TEST
+</body>
+</html>
+
+[INFO][main][2017-06-13 19:03:29][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 19:03:29][ssl.SSLUtils] - url======http://47.92.152.150:8080/ACC001
+[INFO][main][2017-06-13 19:03:29][ssl.SSLUtils] - body====={tenant_id=asda, puser_id=adas, partner_sign=asdadasadasda, result_url=asdad, partner_serial_no=asdas, partner_id=asda, trade_time=asda, tenant_ref_no=asdasdas, service_id=asdas, business_code=12132, version=adsda}
+[INFO][main][2017-06-13 19:03:30][ssl.SSLUtils] - 404
+[INFO][main][2017-06-13 19:03:30][ssl.SSLUtils] - content:
+[INFO][main][2017-06-13 19:05:08][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 19:05:08][ssl.SSLUtils] - url======https://47.92.152.150:8080/
+[INFO][main][2017-06-13 19:05:08][ssl.SSLUtils] - body====={tenant_id=asda, puser_id=adas, partner_sign=asdadasadasda, result_url=asdad, partner_serial_no=asdas, partner_id=asda, trade_time=asda, tenant_ref_no=asdasdas, service_id=asdas, business_code=12132, version=adsda}
+[INFO][main][2017-06-13 19:08:37][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 19:08:37][ssl.SSLUtils] - url======http://47.92.152.150:8080/
+[INFO][main][2017-06-13 19:08:37][ssl.SSLUtils] - body====={tenant_id=asda, puser_id=adas, partner_sign=asdadasadasda, result_url=asdad, partner_serial_no=asdas, partner_id=asda, trade_time=asda, tenant_ref_no=asdasdas, service_id=asdas, business_code=12132, version=adsda}
+[INFO][main][2017-06-13 19:08:38][ssl.SSLUtils] - 200
+[INFO][main][2017-06-13 19:08:38][ssl.SSLUtils] - content:
+
+<html>
+<head>
+    <title>SSL TEST</title>
+</head>
+<body>
+SSL TEST
+</body>
+</html>
+
+[INFO][main][2017-06-13 19:12:34][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 19:12:34][ssl.SSLUtils] - url======http://47.92.152.150:8080/
+[INFO][main][2017-06-13 19:12:34][ssl.SSLUtils] - body=====<?xml version="1.0" encoding="utf-8"?>
+<Request> <Head>
+<business_code>ACC001</business_code> <partner_id>M0001</partner_id> <puser_id>190123</puser_id> <tenant_id>133182</tenant_id> <version>1.0.0</version>
+<partner_serial_no/>
+<service_id>12389</service_id> <trade_time>20160119154339</trade_time> <result_url>https://www.jijas.com/qwidj/qjwdi</result_url> <partner_sign/>
+</Head> <Body>
+<body_data/> </Body>
+</Request>
+[INFO][main][2017-06-13 19:12:35][ssl.SSLUtils] - 200
+[INFO][main][2017-06-13 19:12:35][ssl.SSLUtils] - content:
+
+<html>
+<head>
+    <title>SSL TEST</title>
+</head>
+<body>
+SSL TEST
+</body>
+</html>
+
+[INFO][main][2017-06-13 19:18:07][ssl.SSLUtils] - ================SSL请求===============
+[INFO][main][2017-06-13 19:18:07][ssl.SSLUtils] - url======http://47.92.152.150:8080/
+[INFO][main][2017-06-13 19:18:07][ssl.SSLUtils] - body=====
+[INFO][main][2017-06-13 19:18:08][ssl.SSLUtils] - 200
+[INFO][main][2017-06-13 19:18:08][ssl.SSLUtils] - content:
+
+<html>
+<head>
+    <title>SSL TEST</title>
+</head>
+<body>
+SSL TEST
+</body>
+</html>
+
