@@ -1,72 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="MySQL - db_ssm@localhost">
-  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
-    <root id="1"/>
-    <schema id="2" parent="1" name="db_ssm">
-      <Current>1</Current>
-      <Visible>1</Visible>
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="db_ssm">
+      <visible>1</visible>
     </schema>
-    <schema id="3" parent="1" name="information_schema"/>
-    <schema id="4" parent="1" name="mysql"/>
-    <schema id="5" parent="1" name="performance_schema"/>
-    <schema id="6" parent="1" name="sakila"/>
-    <schema id="7" parent="1" name="ssm"/>
-    <schema id="8" parent="1" name="ssm2"/>
-    <schema id="9" parent="1" name="sys"/>
-    <schema id="10" parent="1" name="world"/>
-    <table id="11" parent="2" name="t_user">
-      <Comment>用户登录表</Comment>
+    <schema id="2" name="cms"/>
+    <schema id="3" name="demo"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="itronys"/>
+    <schema id="6" name="jfinaldb"/>
+    <schema id="7" name="mysql"/>
+    <schema id="8" name="netspider"/>
+    <schema id="9" name="performance_schema"/>
+    <schema id="10" name="spring5"/>
+    <schema id="11" name="springdemo"/>
+    <schema id="12" name="test"/>
+    <table id="13" parent="1" name="t_user">
+      <comment>用户登录表</comment>
     </table>
-    <column id="12" parent="11" name="id">
-      <Position>1</Position>
-      <DataType>bigint(11)|0</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
+    <column id="14" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
     </column>
-    <column id="13" parent="11" name="user_name">
-      <Position>2</Position>
-      <Comment>用户名</Comment>
-      <DataType>varchar(255)|0</DataType>
+    <column id="15" parent="13" name="user_name">
+      <comment>用户名</comment>
+      <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="14" parent="11" name="user_phone">
-      <Position>3</Position>
-      <Comment>手机号</Comment>
-      <DataType>varchar(20)|0</DataType>
+    <column id="16" parent="13" name="user_phone">
+      <comment>手机号</comment>
+      <data-type>varchar(20)|0</data-type>
     </column>
-    <column id="15" parent="11" name="user_email">
-      <Position>4</Position>
-      <Comment>邮箱地址</Comment>
-      <DataType>varchar(255)|0</DataType>
+    <column id="17" parent="13" name="user_email">
+      <comment>邮箱地址</comment>
+      <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="16" parent="11" name="user_pwd">
-      <Position>5</Position>
-      <Comment>加盐后用户密码</Comment>
-      <DataType>varchar(32)|0</DataType>
+    <column id="18" parent="13" name="user_pwd">
+      <comment>加盐后用户密码</comment>
+      <data-type>varchar(32)|0</data-type>
     </column>
-    <column id="17" parent="11" name="pwd_salt">
-      <Position>6</Position>
-      <Comment>MD5盐</Comment>
-      <DataType>varchar(6)|0</DataType>
+    <column id="19" parent="13" name="pwd_salt">
+      <comment>MD5盐</comment>
+      <data-type>varchar(6)|0</data-type>
     </column>
-    <column id="18" parent="11" name="create_time">
-      <Position>7</Position>
-      <Comment>创建时间</Comment>
-      <DataType>datetime|0</DataType>
+    <column id="20" parent="13" name="create_time">
+      <comment>创建时间</comment>
+      <data-type>datetime|0</data-type>
     </column>
-    <column id="19" parent="11" name="modify_time">
-      <Position>8</Position>
-      <Comment>最后修改时间</Comment>
-      <DataType>datetime|0</DataType>
+    <column id="21" parent="13" name="modify_time">
+      <comment>最后修改时间</comment>
+      <data-type>datetime|0</data-type>
     </column>
-    <column id="20" parent="11" name="is_delete">
-      <Position>9</Position>
-      <Comment>是否删除，0-未删除；1-已删除</Comment>
-      <DataType>tinyint(4)|0</DataType>
+    <column id="22" parent="13" name="is_delete">
+      <comment>是否删除，0-未删除；1-已删除</comment>
+      <data-type>tinyint(4)|0</data-type>
     </column>
-    <key id="21" parent="11" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
+    <key id="23" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
     </key>
   </database-model>
 </dataSource>

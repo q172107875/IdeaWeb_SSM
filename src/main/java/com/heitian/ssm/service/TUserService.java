@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by qibo on 2017/6/24.
@@ -27,17 +26,38 @@ public class TUserService implements ITUserService {
     }
 
     @Override
-    public TUser selectTUserName(String name) {
-        return tUserMapper.findUserByUsername(name);
+    public boolean selectTUserName(String name) {
+        System.out.printf("Name="+name.toString());
+        TUser tUser = tUserMapper.findUserByUserName(name);
+        if (tUser==null){
+            return true;
+        }
+        System.out.printf("NAME="+tUser.toString());
+        return false;
     }
 
     @Override
-    public Set<String> findRoles(String username) {
-        return null;
+    public boolean selectTUserPhone(String phone) {
+        TUser tUser = tUserMapper.findUserByUserPhone(phone);
+        if (tUser==null){
+            return true;
+        }
+        System.out.printf("Phone="+tUser.toString());
+        return false;
     }
 
     @Override
-    public Set<String> findPermissions(String username) {
-        return null;
+    public boolean selectTUserEmail(String email) {
+        TUser tUser = tUserMapper.findUserByUserEmail(email);
+        if (tUser==null){
+            return true;
+        }
+        System.out.printf("Email="+tUser.toString());
+        return false;
+    }
+
+    @Override
+    public int insertTUser(TUser tUser) {
+        return tUserMapper.insert(tUser);
     }
 }

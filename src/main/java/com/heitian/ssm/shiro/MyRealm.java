@@ -12,7 +12,6 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 
 import javax.annotation.Resource;
-import java.util.Set;
 
 /**
  * Created with IDEA
@@ -33,10 +32,10 @@ public class MyRealm extends AuthorizingRealm {
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         String username = principalCollection.getPrimaryPrincipal().toString() ;
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo() ;
-        Set<String> roleName = t_userService.findRoles(username) ;
-        Set<String> permissions = t_userService.findPermissions(username) ;
-        info.setRoles(roleName);
-        info.setStringPermissions(permissions);
+//        Set<String> roleName = t_userService.findRoles(username) ;
+//        Set<String> permissions = t_userService.findPermissions(username) ;
+//        info.setRoles(roleName);
+//        info.setStringPermissions(permissions);
         return info;
     }
 
@@ -51,7 +50,7 @@ public class MyRealm extends AuthorizingRealm {
             throws AuthenticationException {
         //获取用户账号
         String username = token.getPrincipal().toString() ;
-        TUser user = t_userService.selectTUserName(username) ;
+        TUser user = t_userService.selectTUserId(1l) ;
         if (user != null){
             //将查询到的用户账号和密码存放到 authenticationInfo用于后面的权限判断。第三个参数随便放一个就行了。
             AuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(user.getUserName(),user.getPwdSalt(),

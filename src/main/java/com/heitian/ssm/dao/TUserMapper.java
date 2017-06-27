@@ -2,8 +2,9 @@ package com.heitian.ssm.dao;
 
 import com.heitian.ssm.pojo.TUser;
 import com.heitian.ssm.pojo.TUserExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TUserMapper {
     int countByExample(TUserExample example);
@@ -20,7 +21,11 @@ public interface TUserMapper {
 
     TUser selectByPrimaryKey(Long id);
 
-    TUser findUserByUsername(String name);
+    TUser findUserByUserName(String name);
+
+    TUser findUserByUserPhone(String phone);
+
+    TUser findUserByUserEmail(String email);
 
     int updateByExampleSelective(@Param("record") TUser record, @Param("example") TUserExample example);
 

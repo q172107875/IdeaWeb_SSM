@@ -94,9 +94,17 @@
     from t_user
     where id = #{id,jdbcType=BIGINT}
   </select>
-  <select id="findUserByUsername" parameterType="String" resultMap="BaseResultMap">
+  <select id="findUserByUserName" parameterType="String" resultMap="BaseResultMap">
     select <include refid="Base_Column_List"/>
     from t_user where user_name=#{userName}
+  </select>
+  <select id="findUserByUserPhone" parameterType="String" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/>
+    from t_user where user_phone=#{userPhone}
+  </select>
+  <select id="findUserByUserEmail" parameterType="String" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/>
+    from t_user where user_email=#{userEmail}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from t_user
